@@ -8,12 +8,7 @@
         };
         public static string GetProducts()
         {
-            string products = "";
-            foreach(Product product in Products)
-            {
-                products += product + "\n";
-            }
-            return products;
+            return string.Join("\n", Products);
         }
     }
 }
